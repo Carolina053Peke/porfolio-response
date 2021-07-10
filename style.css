@@ -1,0 +1,636 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  /* border: 1px solid red; /*MODIFICACION */
+}
+a,
+i {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAV */
+
+#nav,
+.encabezado {
+  display: flex;
+  justify-content: flex-end; /* MODIFICACION*/
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  align-items: flex-end;
+}
+.encabezado {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  height: 80px;
+}
+
+.links-nav:hover {
+  color:  rgb(247, 29, 138)
+}
+
+a:link {
+  /*MODIFICACION */
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+}
+
+
+.boton-personalizado {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333333;
+  background-color:#F9A826;
+  border-color:#F9A826;
+  border-radius: 35px;
+  padding: 5px;
+
+ 
+}
+
+.boton-personalizado:hover {
+  background-color: rgb(247, 29, 138);
+  border-color: rgb(247, 29, 138);
+}
+
+/* fin NAV*/
+
+/* PRESENTACION */
+
+#presentacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color:white;
+  height: 500px;
+  margin-top: 20px;
+}
+.mi-nombre {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin-right: 30px;
+}
+.centrado-de-contenido-presentacion {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mmf {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: rgb(247, 29, 138);
+}
+
+.lo-que-hago {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333333;
+  background-color:#F9A826;
+  border-color: #F9A826;
+  border-radius: 35px;
+  padding: 5px;
+  margin-left: 50px;
+}
+.lo-que-hago:hover {
+  background-color: rgb(247, 29, 138);
+  border-color: rgb(247, 29, 138);
+}
+.mi-foto {
+  width: 450px;
+  height: 350px;
+  margin: auto;
+  background-color: lightcoral;
+}
+
+/* Fin PRESENTACION */
+
+/* MIS CONOCIMIENTOS */
+
+.centrado-de-contenido-mis-conocimientos {
+  width: 1100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.titulo-mis-conocimientos {
+  width: 400px;
+  height: 100px;
+}
+
+#mis-conocimientos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color:#f6f7fb;
+  padding: 50px;
+}
+
+/* Cards */
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color:#f6f7fb;
+  padding: 30px;
+}
+
+.fila1,
+.fila2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  margin: 0;
+  border: 1px solid rgb(247, 29, 138);
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-4,
+.image-5,
+.image-6 {
+  margin: 0;
+  border: 1px solid rgb(247, 29, 138);
+  border-radius: 20px; 
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.image-6:hover,
+.image-5:hover,
+.image-4:hover,
+.image-3:hover,
+.image-2:hover,
+.image-1:hover {
+  border-color: #F9A826;
+}
+
+/* Fin Cards */
+
+/* Fin de mis conocimientos*/
+
+/* cita */
+
+.cita {
+  display: flex;
+  text-align: center;
+  background-color:#F9A826;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.ancho-de-cita {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.centrado-de-contenido-cita {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fin de cita */
+
+/* mis-proyectos  */
+
+#mis-proyectos {
+  text-align: center;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.centrado-de-contenido-mis-proyectos {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-mis-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+}
+.cards-1,
+.cards-2,
+.cards-3 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(247, 29, 138);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.cards-4,
+.cards-5,
+.cards-6,
+.cards-7 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(247, 29, 138);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.cards-1:hover,
+.cards-2:hover,
+.cards-3:hover,
+.cards-4:hover,
+.cards-5:hover,
+.cards-6:hover,
+.cards-7:hover {
+  border-color: #F9A826;
+}
+
+/*  fin de mis-proyectos */
+
+/* formulario-de-contacto  */
+#formulario-de-contacto {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f7fb;
+}
+.centrado-de-contenido-formulario {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 850px;
+  height: 500px;
+  border: 1px solid #F9A826;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contacto-form {
+  padding-right: 60px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: block;
+}
+.input-name {
+  display: flex;
+}
+
+.form-control {
+  position: relative;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+  cursor: default;
+}
+
+input,
+textarea {
+  border: 0;
+  border-radius: 20px;
+  background-color: #f6f7fb;
+  border: 1px solid #f6f7fb;
+  font-size: 1rem;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  outline: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0%);
+  transition: 0.2s;
+}
+
+.contacto-send {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333333;
+  background-color: rgb(247, 29, 138);
+  border-color: rgb(247, 29, 138);
+  border-radius: 35px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.contacto-send:hover {
+  background-color: hsl(278, 41%, 36%);
+  border-color: hsl(278, 41%, 36%);
+}
+.input,
+textarea:focus {
+  border-color: rgb(247, 29, 138);
+  transition: 1s;
+}
+
+/* Fin formulario contacto */
+
+/* Redes formulario de contacto */
+
+.redes {
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.fab,
+.fas {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+.fab:hover {
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #F9A826;
+}
+.fas:hover {
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #F9A826;
+}
+
+/* Fin de redes */
+
+/* FOOTER*/
+
+.pie-de-pagina {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#F9A826;
+  height: 150px;
+  margin-top: 20px;
+}
+.redes-pie {
+  display: flex;
+
+}
+.turn:hover {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid grey;
+}
+.turn:active {
+  text-decoration: none;
+}
+.turn:focus {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+  #nav {
+    display: none;
+  }
+  #presentacion {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+  }
+  .centrado-de-contenido-presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .mi-nombre {
+    width: 200px;
+    height: 200px;
+  }
+  .mi-foto {
+    width: 230px;
+    height: 200px;
+  }
+  .mmf {
+    font-size: 30px;
+  }
+  .lo-que-hago {
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .centrado-de-contenido-mis-conocimientos {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo-mis-conocimientos {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 25px;
+    align-items: center;
+  }
+  p {
+    font-size: 12px;
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .fila1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fila2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .image-1,
+  .image-2,
+  .image-3,
+  .image-4,
+  .image-5,
+  .image-6 {
+    width: 150px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .centrado-de-contenido-cita {
+    width: 300px;
+  }
+
+  .titulo-mis-proyectos > p{
+    margin-left: 20px;
+    width: 300px;
+  }
+
+
+  .container-mis-proyectos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-bottom: 10px;
+
+
+  }
+  .img1 {
+    width: 120px;
+    height: 120px;
+  }
+  .cards-1,
+  .cards-2,
+  .cards-3,
+  .cards-4,
+  .cards-5,
+  .cards-6,
+  .cards-7 {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* ARREGLAR FORM*/
+
+.formulario-de-contacto{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+}
+
+
+  .form-container{
+    display:inline-flex;
+    flex-direction: column;
+    width: 250px;
+    height: 750px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 70px;
+    list-style-position: initial;
+  }
+    
+
+  .form-container > p,h2{
+    text-align: center;
+  }
+
+  .redes{
+    padding: 5px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+ .contacto-titulo{
+   padding-top: 10px;
+ }
+
+
+  .input-name {
+    flex-direction: column;
+    font-size: 15px;
+    width: 220px;
+  }
+
+  label{
+    padding-left: 5px;
+  }
+
+  .input-lastname, .input-control {
+    margin-left: 0;
+    font-size: 15px;
+    width: 220px;
+  }
+  textarea {
+    width: 220px;
+    height: 100px;
+  }
+  /*ARREGLAR FORM */
+  .pie-de-pagina {
+    display: none;
+  }
+  .futer {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .redes-pie {
+    width: 280px;
+    display: flex;
+  }
+}
